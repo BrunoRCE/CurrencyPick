@@ -16,7 +16,7 @@ class CurrencyAdapter(
     private var itemsClone = mutableListOf<Currency>()
 
     /** **/
-    private var isFullCurrencyData: Boolean = true
+    private var isFullMode: Boolean = true
 
     /** **/
     private var textColor: Int? = null
@@ -32,8 +32,8 @@ class CurrencyAdapter(
     /**
      *
      */
-    fun showFullCurrencyData(show: Boolean) {
-        isFullCurrencyData = show
+    fun showFullMode(show: Boolean) {
+        isFullMode = show
     }
 
     /**
@@ -77,7 +77,7 @@ class CurrencyAdapter(
 
         holder.setTextColor(textColor)
 
-        holder.showFullCurrencyData(isFullCurrencyData)
+        holder.showFullMode(isFullMode)
 
         holder.itemView.setOnClickListener {
             onItemClickListener(item)

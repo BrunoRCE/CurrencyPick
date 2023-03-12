@@ -29,7 +29,7 @@ class CurrencyPick(
     private var textColor: Int? = null
 
     /** **/
-    private var isFullCurrencyData: Boolean = true
+    private var isFullMode: Boolean = true
 
     /**
      *
@@ -50,7 +50,7 @@ class CurrencyPick(
 
         setTextColorView(textColor)
 
-        showFullCurrencyDataView(isFullCurrencyData)
+        showFullMode(isFullMode)
 
         return builder.create()
     }
@@ -114,8 +114,8 @@ class CurrencyPick(
     /**
      *
      */
-    fun showMinimalData() {
-        isFullCurrencyData = false
+    fun showMinimalMode() {
+        isFullMode = false
     }
 
     /**
@@ -141,8 +141,8 @@ class CurrencyPick(
     /**
      *
      */
-    private fun showFullCurrencyDataView(show: Boolean) {
-        adapter?.showFullCurrencyData(show)
+    private fun showFullMode(show: Boolean) {
+        adapter?.showFullMode(show)
     }
 
     /**

@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         currencyPick.setTextColor("#2196F3")
 
-        currencyPick.showMinimalData()
+        currencyPick.showMinimalMode()
 
         binding.button.setOnClickListener {
             currencyPick.show(supportFragmentManager, "")

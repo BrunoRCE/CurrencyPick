@@ -39,10 +39,10 @@ class CurrencyViewHolder(
     /**
      *
      */
-    fun showFullCurrencyData(show: Boolean) {
+    fun showFullMode(show: Boolean) {
         binding.apply {
+            ivFlag.isVisible = show
             tvCode.isVisible = show
-            tvSymbol.isVisible = show
         }
     }
 
