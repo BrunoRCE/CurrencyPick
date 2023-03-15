@@ -1,10 +1,16 @@
 # CurrencyPick for Android
 ![](https://img.shields.io/badge/kotlin-1.0.0-blueviolet) [![](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/donate/?hosted_button_id=EATW6JWV2AQ4N)
 
-CurrencyPick is a simple android library that can be show a currency picker. Inspired by https://github.com/Scrounger/CountryCurrencyPicker
+CurrencyPick is a simple android library that can be show a currency picker.
 
-<img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen3.png" width="60%">
+Inspired by https://github.com/Scrounger/CountryCurrencyPicker
 
+<p align="left">
+  <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen1.png" width="300">
+  <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen3.png" width="300">
+  <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen4.png" width="300">
+<p>
+  
 
 ## How to use
 
@@ -27,7 +33,7 @@ Step 2\. Add the dependency
 
 ```java
 dependencies {
-      implementation 'com.github.brunorce:currencypick:1.0.0'
+      implementation com.github.BrunoRCE:CurrencyPick:1.0.0'
 }
 ```
 
@@ -55,14 +61,14 @@ Add your custom query hint with the ***setQueryHint*** method
 
 ### Show minimal mode
 
-Show only the minimum information with the ***showMinimalMode*** method
+Show only the minimum information with the ***setMinimalMode*** method
 
 ```java
      val currencyPick = CurrencyPick { currency ->
               // Implement your code here
         }
 
-        currencyPick.showMinimalMode()
+        currencyPick.setMinimalMode()
 ```
 
 <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen1.png" width="60%">
@@ -78,8 +84,10 @@ Change the color of the texts with the ***setTextColor*** method
 
         currencyPick.setTextColor("#2196F3")
 ```
-<img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen2.png" width="40%">
-<img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen4.png" width="40%">
-<img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen5.png" width="40%">
+<p align="left">
+   <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen2.png" width="300">
+   <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen4.png" width="300">
+   <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen5.png" width="300">
+</p>
 
 
