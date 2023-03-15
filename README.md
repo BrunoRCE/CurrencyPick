@@ -8,7 +8,6 @@ Inspired by https://github.com/Scrounger/CountryCurrencyPicker
 <p align="left">
   <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen1.png" width="300">
   <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen3.png" width="300">
-  <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen4.png" width="300">
 <p>
   
 
@@ -59,7 +58,7 @@ Add your custom query hint with the ***setQueryHint*** method
         currencyPick.setQueryHint("Custom hint...")
 ```
 
-### Show minimal mode
+### Minimal mode
 
 Show only the minimum information with the ***setMinimalMode*** method
 
@@ -71,7 +70,7 @@ Show only the minimum information with the ***setMinimalMode*** method
         currencyPick.setMinimalMode()
 ```
 
-<img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen1.png" width="60%">
+<img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen1.png" width="40%">
 
 ### Change the text color
 
@@ -85,9 +84,9 @@ Change the color of the texts with the ***setTextColor*** method
         currencyPick.setTextColor("#2196F3")
 ```
 <p align="left">
-   <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen2.png" width="300">
-   <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen4.png" width="300">
-   <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen5.png" width="300">
+   <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen2.png" width="250">
+   <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen4.png" width="250">
+   <img src="https://github.com/BrunoRCE/CurrencyPick/blob/main/assets/screen5.png" width="250">
 </p>
 
 
