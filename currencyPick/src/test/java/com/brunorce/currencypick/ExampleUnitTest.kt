@@ -1,4 +1,4 @@
-package com.brunoxapps.currencypick
+package com.brunorce.currencypick
 
 import org.junit.Test
 

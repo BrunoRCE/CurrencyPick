@@ -1,9 +1,9 @@
-package com.brunoxapps.currencypick
+package com.brunorce.currencypick
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.brunoxapps.currencypick.databinding.ActivityMainBinding
-import com.brunoxapps.currencypick.model.Currency
+import com.brunorce.currencypick.databinding.ActivityMainBinding
+import com.brunorce.currencypick.model.Currency
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         currencyPick.setTextColor("#2196F3")
 
-        currencyPick.showMinimalMode()
+        currencyPick.setMinimalMode()
 
         binding.button.setOnClickListener {
             currencyPick.show(supportFragmentManager, "")

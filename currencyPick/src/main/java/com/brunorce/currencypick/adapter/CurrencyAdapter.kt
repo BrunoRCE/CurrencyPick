@@ -1,11 +1,11 @@
-package com.brunoxapps.currencypick.adapter
+package com.brunorce.currencypick.adapter
 
 import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import com.brunoxapps.currencypick.model.Currency
+import com.brunorce.currencypick.model.Currency
 import java.util.Locale
 
 class CurrencyAdapter(

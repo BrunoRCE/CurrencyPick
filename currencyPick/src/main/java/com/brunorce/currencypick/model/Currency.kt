@@ -1,4 +1,4 @@
-package com.brunoxapps.currencypick.model
+package com.brunorce.currencypick.model
 
 data class Currency(
     val code: String?,

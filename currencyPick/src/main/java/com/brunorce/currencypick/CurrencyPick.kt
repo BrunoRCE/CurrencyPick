@@ -1,4 +1,4 @@
-package com.brunoxapps.currencypick
+package com.brunorce.currencypick
 
 import android.app.Dialog
 import android.graphics.Color
@@ -7,10 +7,10 @@ import android.widget.SearchView
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.FragmentManager
-import com.brunoxapps.currencypick.adapter.CurrencyAdapter
-import com.brunoxapps.currencypick.data.Currencies
-import com.brunoxapps.currencypick.databinding.DialogCurrencyPickBinding
-import com.brunoxapps.currencypick.model.Currency
+import com.brunorce.currencypick.adapter.CurrencyAdapter
+import com.brunorce.currencypick.data.Currencies
+import com.brunorce.currencypick.databinding.DialogCurrencyPickBinding
+import com.brunorce.currencypick.model.Currency
 
 class CurrencyPick(
     private val currency: (Currency) -> Unit
@@ -114,7 +114,7 @@ class CurrencyPick(
     /**
      *
      */
-    fun showMinimalMode() {
+    fun setMinimalMode() {
         isFullMode = false
     }
 

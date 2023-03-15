@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.brunoxapps.currencypick'
+    namespace 'com.brunorce.currencypick'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.brunoxapps.currencypick"
+        applicationId "com.brunorce.currencypick"
         minSdk 24
         targetSdk 33
         versionCode 1

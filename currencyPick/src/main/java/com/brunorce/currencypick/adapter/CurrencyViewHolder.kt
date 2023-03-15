@@ -1,11 +1,11 @@
-package com.brunoxapps.currencypick.adapter
+package com.brunorce.currencypick.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
-import com.brunoxapps.currencypick.databinding.ItemCurrencyBinding
-import com.brunoxapps.currencypick.model.Currency
+import com.brunorce.currencypick.databinding.ItemCurrencyBinding
+import com.brunorce.currencypick.model.Currency
 
 class CurrencyViewHolder(
     private val binding: ItemCurrencyBinding

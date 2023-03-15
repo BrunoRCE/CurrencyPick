@@ -1,7 +1,7 @@
-package com.brunoxapps.currencypick.data
+package com.brunorce.currencypick.data
 
-import com.brunoxapps.currencypick.model.Currency
-import com.brunoxapps.currencypick.R
+import com.brunorce.currencypick.model.Currency
+import com.brunorce.currencypick.R
 
 object Currencies {
     val CURRENCIES = listOf(
