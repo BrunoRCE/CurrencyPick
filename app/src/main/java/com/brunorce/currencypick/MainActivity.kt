@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
 
         currencyPick.setTextColor("#2196F3")
 
+        currencyPick.setTextColorOnlyName()
+
         currencyPick.setMinimalMode()
 
         binding.button.setOnClickListener {

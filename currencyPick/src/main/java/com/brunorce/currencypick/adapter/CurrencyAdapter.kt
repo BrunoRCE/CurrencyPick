@@ -16,10 +16,13 @@ class CurrencyAdapter(
     private var itemsClone = mutableListOf<Currency>()
 
     /** **/
-    private var isFullMode: Boolean = true
+    private var textColor: Int? = null
 
     /** **/
-    private var textColor: Int? = null
+    private var isTextColorOnlyName: Boolean = false
+
+    /** **/
+    private var isMinimalMode: Boolean = false
 
     /**
      *
@@ -32,15 +35,22 @@ class CurrencyAdapter(
     /**
      *
      */
-    fun showFullMode(show: Boolean) {
-        isFullMode = show
+    fun setTextColor(color: Int?) {
+        textColor = color
     }
 
     /**
      *
      */
-    fun setTextColor(color: Int?) {
-        textColor = color
+    fun setTextColorOnlyName(isTextColorOnlyName: Boolean) {
+        this.isTextColorOnlyName = isTextColorOnlyName
+    }
+
+    /**
+     *
+     */
+    fun setMinimalMode(isMinimalMode: Boolean) {
+        this.isMinimalMode = isMinimalMode
     }
 
     /**
@@ -77,7 +87,9 @@ class CurrencyAdapter(
 
         holder.setTextColor(textColor)
 
-        holder.showFullMode(isFullMode)
+        holder.setTextColorOnlyName(isTextColorOnlyName)
+
+        holder.setMinimalMode(isMinimalMode)
 
         holder.itemView.setOnClickListener {
             onItemClickListener(item)

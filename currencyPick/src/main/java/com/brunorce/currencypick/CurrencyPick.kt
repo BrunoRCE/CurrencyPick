@@ -29,7 +29,10 @@ class CurrencyPick(
     private var textColor: Int? = null
 
     /** **/
-    private var isFullMode: Boolean = true
+    private var isTextColorOnlyName: Boolean = false
+
+    /** **/
+    private var isMinimalMode: Boolean = false
 
     /**
      *
@@ -50,7 +53,9 @@ class CurrencyPick(
 
         setTextColorView(textColor)
 
-        showFullMode(isFullMode)
+        setTextColorOnlyNameView(isTextColorOnlyName)
+
+        setMinimalModeView(isMinimalMode)
 
         return builder.create()
     }
@@ -105,28 +110,39 @@ class CurrencyPick(
     }
 
     /**
-     *
+     * Set your custom query hint.
+     * If it is not added, the text "Search..." hint is set by default
      */
     fun setQueryHint(queryHint: String) {
         this.queryHint = queryHint
     }
 
     /**
-     *
+     * Sets the text color of all currency information in the view.
+     * You should set only the color in hexadecimal format.
+     * If it is not added or is the format wrong, the text color GRAY is set by default
      */
-    fun setMinimalMode() {
-        isFullMode = false
-    }
-
-    /**
-     *
-     */
-    fun setTextColor(color: String) {
+    fun setTextColor(colorHex: String) {
         try {
-            textColor = Color.parseColor(color)
+            textColor = Color.parseColor(colorHex)
         } catch (e: IllegalArgumentException) {
             e.printStackTrace()
         }
+    }
+
+    /**
+     * Applies only the text color assigned to the currency name,
+     * all other texts are set to color GRAY
+     */
+    fun setTextColorOnlyName() {
+        isTextColorOnlyName = true
+    }
+
+    /**
+     * Sets the minimum view format, hiding the flag and currency code
+     */
+    fun setMinimalMode() {
+        isMinimalMode = true
     }
 
     /**
@@ -141,8 +157,8 @@ class CurrencyPick(
     /**
      *
      */
-    private fun showFullMode(show: Boolean) {
-        adapter?.showFullMode(show)
+    private fun setMinimalModeView(show: Boolean) {
+        adapter?.setMinimalMode(show)
     }
 
     /**
@@ -150,5 +166,12 @@ class CurrencyPick(
      */
     private fun setTextColorView(color: Int?) {
         adapter?.setTextColor(color)
+    }
+
+    /**
+     *
+     */
+    private fun setTextColorOnlyNameView(isTextColorOnlyName: Boolean) {
+        adapter?.setTextColorOnlyName(isTextColorOnlyName)
     }
 }

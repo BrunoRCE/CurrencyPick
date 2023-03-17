@@ -1,5 +1,6 @@
 package com.brunorce.currencypick.adapter
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.view.isVisible
@@ -39,10 +40,24 @@ class CurrencyViewHolder(
     /**
      *
      */
-    fun showFullMode(show: Boolean) {
+    fun setTextColorOnlyName(isTextColorOnlyName: Boolean) {
         binding.apply {
-            ivFlag.isVisible = show
-            tvCode.isVisible = show
+            if (isTextColorOnlyName) {
+                tvCode.setTextColor(Color.GRAY)
+                tvSymbol.setTextColor(Color.GRAY)
+            }
+        }
+    }
+
+    /**
+     *
+     */
+    fun setMinimalMode(isMinimalMode: Boolean) {
+        binding.apply {
+            if (isMinimalMode) {
+                ivFlag.isVisible = false
+                tvCode.isVisible = false
+            }
         }
     }
 
